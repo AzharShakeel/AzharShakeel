@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="assets/radiant-architect.svg" width="100%">
+</p>
+
+
 <!-- ============================================================
      SYSTEMS ONLINE. DEPTH: CLASSIFIED.
      ============================================================ -->
