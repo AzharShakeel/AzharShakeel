@@ -9,14 +9,9 @@
 
 <div align="center">
 
-```
-██████╗ ██╗   ██╗██╗██╗     ██████╗
-██╔══██╗██║   ██║██║██║     ██╔══██╗
-██████╔╝██║   ██║██║██║     ██║  ██║
-██╔══██╗██║   ██║██║██║     ██║  ██║
-██████╔╝╚██████╔╝██║███████╗██████╔╝
-╚═════╝  ╚═════╝ ╚═╝╚══════╝╚═════╝
-```
+<p align="center">
+  <img src="assets/build.svg" width="100%">
+</p>
 
 **`[ ENTERPRISE AI · ALGORITHM ARCHITECTURE · FULL-STACK SYSTEMS ]`**
 
@@ -93,26 +88,9 @@ When a problem arrives, the first question isn't *how* — it's *what kind*.
 
 ## `03` &nbsp; Stack Topology
 
-```
- ╭──────────────────────────────────────────────────────────────╮
- │  LAYER          TECHNOLOGY          SIGNAL                   │
- ├──────────────────────────────────────────────────────────────┤
- │  BACKEND                                                     │
- │  ·············  Python              ▓▓▓▓▓▓▓▓▓▓▓▓  Primary   │
- │  ·············  AI / ML Systems     ▓▓▓▓▓▓▓▓▓▓░░  Precise   │
- │  ·············  Algorithm Design    ▓▓▓▓▓▓▓▓▓░░░  Custom    │
- ├──────────────────────────────────────────────────────────────┤
- │  INFRASTRUCTURE                                              │
- │  ·············  Linux               ▓▓▓▓▓▓▓▓▓▓▓▓  Native    │
- │  ·············  Docker / CI/CD      ▓▓▓▓▓▓▓▓▓░░░  Hardened  │
- ├──────────────────────────────────────────────────────────────┤
- │  FRONTEND                                                    │
- │  ·············  HTML · CSS · JS     ▓▓▓▓▓▓▓▓▓▓░░  Always    │
- │  ·············  React / TypeScript  ▓▓▓▓▓▓░░░░░░  Earned    │
- ├──────────────────────────────────────────────────────────────┤
- │  ▓▓▓▓  SHADOW STACK                 ░░░░░░░░░░░░  Private   │
- ╰──────────────────────────────────────────────────────────────╯
-```
+<p align="center">
+  <img src="assets/stack.svg" width="100%">
+</p>
 
 ---
 
@@ -166,10 +144,14 @@ When a concept earns public attention, I write about it or teach it.
 
 <br/>
 
-[![Python](https://img.shields.io/badge/Python-Primary_Language-ffd43b?style=flat-square&logo=python&logoColor=black)](https://python.org)&nbsp;
-[![Linux](https://img.shields.io/badge/Linux-Native_Foundation-00ff88?style=flat-square&logo=linux&logoColor=black)](https://kernel.org)&nbsp;
-[![AI/ML](https://img.shields.io/badge/AI%2FML-Precision_Systems-00d4ff?style=flat-square&logo=pytorch&logoColor=white)](#)&nbsp;
-[![Status](https://img.shields.io/badge/Status-Research_Mode-ff6b6b?style=flat-square)](#)
+![Python](https://img.shields.io/badge/Python-Primary-1a1a1a?style=flat-square&logo=python&logoColor=white)&nbsp;
+![Linux](https://img.shields.io/badge/Linux-Native-1a1a1a?style=flat-square&logo=linux&logoColor=white)&nbsp;
+![Docker](https://img.shields.io/badge/Docker-Containers-1a1a1a?style=flat-square&logo=docker&logoColor=white)&nbsp;
+![AI/ML](https://img.shields.io/badge/AI%2FML-Systems-1a1a1a?style=flat-square&logo=pytorch&logoColor=white)&nbsp;
+![React](https://img.shields.io/badge/React-Frontend-1a1a1a?style=flat-square&logo=react&logoColor=white)&nbsp;
+![TypeScript](https://img.shields.io/badge/TypeScript-Typed-1a1a1a?style=flat-square&logo=typescript&logoColor=white)&nbsp;
+![Git](https://img.shields.io/badge/Git-Version_Control-1a1a1a?style=flat-square&logo=git&logoColor=white)&nbsp;
+![Status](https://img.shields.io/badge/Status-Research_Mode-222222?style=flat-square&labelColor=111111&logoColor=white)
 
 <br/>
 
