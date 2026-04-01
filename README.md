@@ -124,9 +124,10 @@ When a problem arrives, the first question isn't *how* — it's *what kind*.
 
 ---
 
-## `06` &nbsp; Occasionally
+## 06   Signal
 
-When a concept earns public attention, I write about it or teach it.
+When the work produces something worth sharing — it surfaces here.
+Everything else stays in the build..
 **Building, researching, and shipping always comes first.**
 
 ---
