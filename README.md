@@ -5,6 +5,8 @@
 
 <!-- ============================================================
      SYSTEMS ONLINE. DEPTH: CLASSIFIED.
+     © 2026 RADIANT ARCHITECT — CC BY-NC 4.0
+     Unauthorized reuse is prohibited.
      ============================================================ -->
 
 <div align="center">
@@ -124,11 +126,14 @@ When a problem arrives, the first question isn't *how* — it's *what kind*.
 
 ---
 
-## 06   Signal
+## `06` &nbsp; Signal
 
 When the work produces something worth sharing — it surfaces here.
-Everything else stays in the build..
+Everything else stays in the build.
+
 **Building, researching, and shipping always comes first.**
+
+> *Original work by Azhar — RADIANT ARCHITECT. This profile and its architecture are not templates.*
 
 ---
 
@@ -152,6 +157,7 @@ Everything else stays in the build..
 ![React](https://img.shields.io/badge/React-Frontend-1a1a1a?style=flat-square&logo=react&logoColor=white)&nbsp;
 ![TypeScript](https://img.shields.io/badge/TypeScript-Typed-1a1a1a?style=flat-square&logo=typescript&logoColor=white)&nbsp;
 ![Git](https://img.shields.io/badge/Git-Version_Control-1a1a1a?style=flat-square&logo=git&logoColor=white)&nbsp;
+![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-1a1a1a?style=flat-square&logoColor=white)&nbsp;
 ![Status](https://img.shields.io/badge/Status-Research_Mode-222222?style=flat-square&labelColor=111111&logoColor=white)
 
 <br/>
@@ -160,4 +166,22 @@ Everything else stays in the build..
 
 </div>
 
+---
+
+<div align="center">
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║                  © 2026 RADIANT ARCHITECT                    ║
+║             github.com/RadiantArchitect                      ║
+╠══════════════════════════════════════════════════════════════╣
+║  This profile, its design, structure, and content are        ║
+║  original work. Licensed under CC BY-NC 4.0.                 ║
+║  Copying or reuse without attribution is prohibited.         ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
 <!-- ── depth is the only metric that matters ── -->
+<!-- ── unauthorized reproduction is prohibited under CC BY-NC 4.0 ── -->
