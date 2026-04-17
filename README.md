@@ -172,8 +172,8 @@ Everything else stays in the build.
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║                  © 2026 RADIANT ARCHITECT                    ║
-║             github.com/RadiantArchitect                      ║
+║                  © 2026 AZHAR SHAKEEL                  ║
+║             github.com/AZHARSHAKEEL                      ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  This profile, its design, structure, and content are        ║
 ║  original work. Licensed under CC BY-NC 4.0.                 ║
