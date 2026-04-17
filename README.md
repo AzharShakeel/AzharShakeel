@@ -173,7 +173,7 @@ Everything else stays in the build.
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                  © 2026 AZHAR SHAKEEL                  ║
-║             github.com/Azhar Shakeel                      ║
+║             github.com/AzharShakeel                      ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  This profile, its design, structure, and content are        ║
 ║  original work. Licensed under CC BY-NC 4.0.                 ║
