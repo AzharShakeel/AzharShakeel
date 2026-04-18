@@ -14,6 +14,10 @@
 
 *The foundation holds. The intelligence compounds. The work speaks.*
 
+[![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-blue?style=flat-square)](LICENSE)
+
+*Protected under the Creative Commons Attribution-NonCommercial 4.0 International License.*
+
 </div>
 
 ---
@@ -185,12 +189,7 @@ When a concept earns public attention, I write about it or teach it.
 [![Python](https://img.shields.io/badge/Python-Primary_Language-ffd43b?style=flat-square&logo=python&logoColor=black)](https://python.org)&nbsp;
 [![Linux](https://img.shields.io/badge/Linux-Native_Foundation-00ff88?style=flat-square&logo=linux&logoColor=black)](https://kernel.org)&nbsp;
 [![AI/ML](https://img.shields.io/badge/AI--ML-Precision_Systems-00d4ff?style=flat-square&logo=pytorch&logoColor=white)](#)&nbsp;
-[![Status](https://img.shields.io/badge/Status-Research_Mode-ff6b6b?style=flat-square)](#)&nbsp;
-[![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-blue?style=flat-square)](LICENSE)
-
-<br/>
-
-*Protected by the Creative Commons Attribution-NonCommercial 4.0 International License. See the [LICENSE](LICENSE) file for terms.*
+[![Status](https://img.shields.io/badge/Status-Research_Mode-ff6b6b?style=flat-square)](#)
 
 <br/>
 
