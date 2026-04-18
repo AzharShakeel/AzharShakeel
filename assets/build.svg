@@ -16,6 +16,13 @@
       <stop offset="0%"   style="stop-color:#ececec;stop-opacity:1"/>
       <stop offset="100%" style="stop-color:#fafafa;stop-opacity:1"/>
     </radialGradient>
+    <linearGradient id="rainbowText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="25%" stop-color="#00ff88"/>
+      <stop offset="50%" stop-color="#ffd43b"/>
+      <stop offset="75%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
   </defs>
 
   <style>
