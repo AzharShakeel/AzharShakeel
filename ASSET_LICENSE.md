@@ -2,7 +2,7 @@
 
 Version 1.0 — Effective April 18, 2026
 
-Copyright (c) 2026 Azhar
+Copyright (c) 2026 Azhar Shakeel
 
 ## Grant
 

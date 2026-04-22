@@ -12,7 +12,7 @@ Unless otherwise stated, repository content is provided under the license in [`L
 The following are proprietary brand assets and are **not** granted for reuse, redistribution,
 or adaptation without prior written permission:
 
-- `assets/radiant-architect.svg`
+- `assets/azhar-shakeel.svg`
 - `assets/build.svg`
 - `assets/stack.svg`
 - Profile visual layout, brand presentation structure, and signature tagline blocks in `README.md`
