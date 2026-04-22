@@ -12,7 +12,7 @@ unless the owner grants written permission.
 The following are strictly protected and are prohibited from reuse, redistribution,
 modification, adaptation, or derivative design without prior written permission:
 
-- `assets/radiant-architect.svg`
+- `assets/azhar-shakeel.svg`
 - `assets/build.svg`
 - `assets/stack.svg`
 - Profile visual layout, brand presentation structure, and signature tagline blocks in `README.md`

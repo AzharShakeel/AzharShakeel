@@ -2,7 +2,7 @@
 
 Version 2.0 — Effective April 18, 2026
 
-Copyright (c) 2026 Kyn AI
+Copyright (c) 2026 Azhar Shakeel
 
 ## Scope
 

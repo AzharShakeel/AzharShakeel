@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/radiant-architect.svg" width="100%">
+  <img src="assets/azhar-shakeel.svg" width="100%">
 </p>
 
 <!-- ============================================================
