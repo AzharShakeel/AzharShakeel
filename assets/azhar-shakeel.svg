@@ -98,7 +98,7 @@
   <!-- ░░ IDENTITY BLOCK ░░ -->
   <text x="450" y="44" text-anchor="middle"
     font-family="'Courier New',Consolas,monospace"
-    font-size="9" fill="#1D5268" letter-spacing="5">RADIANT ARCHITECT  ·  KASHMIR, INDIA</text>
+    font-size="9" fill="#1D5268" letter-spacing="5"></text>
 
   <text x="450" y="126" text-anchor="middle"
     font-family="'Helvetica Neue',Helvetica,Arial,sans-serif"
@@ -207,6 +207,6 @@
   <!-- Copyright -->
   <text x="450" y="433" text-anchor="middle"
     font-family="'Courier New',Consolas,monospace"
-    font-size="7.5" fill="#0E2233" letter-spacing="2">CC BY-NC 4.0  ·  © 2025 AZHAR SHAKEEL  ·  ALL RIGHTS RESERVED</text>
+    font-size="7.5" fill="#0E2233" letter-spacing="2">CC BY-NC 4.0  ·  © 2026 AZHAR SHAKEEL  ·  ALL RIGHTS RESERVED</text>
 
 </svg>
