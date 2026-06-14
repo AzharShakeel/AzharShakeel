@@ -83,8 +83,8 @@
 .sc{animation:scL 3.5s linear infinite}
 .sp{animation:speechGlowPulse 3s ease-in-out infinite}
 .th{animation:thoughtFloat 3.5s ease-in-out infinite}
-.lh{animation:typeHand 0.8s ease-in-out infinite}
-.rh{animation:typeHand 0.8s ease-in-out 0.15s infinite}
+.lh{animation:typeCycle 6s ease-in-out infinite}
+.rh{animation:typeCycle 6s ease-in-out -0.24s infinite}
 .cof{animation:cofGlow 2.5s ease-in-out infinite}
 .lts{animation:letsBuild 4s ease-in-out infinite}
 .c1{animation:tl1 8s ease-in-out infinite}
@@ -113,11 +113,29 @@
 .wf{animation:wordFloat 7.5s ease-in-out infinite;transform-box:view-box}
 .rn{animation:rain 3.2s linear infinite;transform-box:view-box}
 .kf{animation:keyflash .8s linear infinite}
-/* penguin: eye blink + thinking head tilt */
+/* penguin: type, lean back to think, then type again (synced 6s loop) */
 @keyframes eyeBlink{0%,90%,100%{transform:scaleY(1)}94%,96%{transform:scaleY(0.08)}}
-@keyframes headThink{0%,55%,100%{transform:rotate(0deg)}68%{transform:rotate(-3deg)}82%{transform:rotate(2.5deg)}}
+@keyframes typeCycle{
+  0%{transform:translateY(0)}4%{transform:translateY(-3px)}8%{transform:translateY(0)}
+  12%{transform:translateY(-2.5px)}16%{transform:translateY(0)}20%{transform:translateY(-3px)}
+  24%{transform:translateY(0)}28%{transform:translateY(-2.5px)}32%{transform:translateY(0)}
+  36%{transform:translateY(-3px)}40%{transform:translateY(0)}44%{transform:translateY(-2.5px)}
+  48%{transform:translateY(0)}52%{transform:translateY(-3px)}56%{transform:translateY(0)}
+  62%{transform:translateY(-12px)}76%{transform:translateY(-12px)}
+  84%{transform:translateY(0)}88%{transform:translateY(-3px)}92%{transform:translateY(0)}100%{transform:translateY(0)}
+}
+@keyframes headThink{
+  0%,52%{transform:rotate(0deg) translateY(0)}
+  62%{transform:rotate(-7deg) translateY(-7px)}
+  76%{transform:rotate(-7deg) translateY(-7px)}
+  86%,100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes gateType{0%,56%{opacity:1}62%,76%{opacity:0}84%,100%{opacity:1}}
 .pgBlink{animation:eyeBlink 4.5s ease-in-out infinite;transform-box:view-box;transform-origin:254px 250px}
 .pgHead{animation:headThink 6s ease-in-out infinite;transform-box:view-box;transform-origin:254px 280px}
+.typeGate{animation:gateType 6s ease-in-out infinite}
+@keyframes ideaShow{0%,56%{opacity:0}62%{opacity:1}76%{opacity:1}82%,100%{opacity:0}}
+.idea{animation:ideaShow 6s ease-in-out infinite}
 /* Device optimization: honor reduced-motion */
 @media (prefers-reduced-motion: reduce){
   *{animation:none !important}
@@ -174,6 +192,14 @@
   <text x="724" y="82" class="rn" style="animation-delay:2.0s">0</text>
   <text x="758" y="64" class="rn" style="animation-delay:.2s">0</text>
   <text x="758" y="86" class="rn" style="animation-delay:1.4s">1</text>
+</g>
+<!-- AI glass panels (frosted, background) -->
+<g>
+  <rect x="34" y="62" width="150" height="214" rx="16" fill="#3AAFCC" fill-opacity="0.035" stroke="#3AAFCC" stroke-opacity="0.14" transform="rotate(-8 109 169)"/>
+  <rect x="40" y="70" width="138" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.05" transform="rotate(-8 109 169)"/>
+  <rect x="704" y="116" width="168" height="244" rx="16" fill="#7C3AED" fill-opacity="0.035" stroke="#7C3AED" stroke-opacity="0.14" transform="rotate(7 788 238)"/>
+  <rect x="712" y="126" width="150" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.05" transform="rotate(7 788 238)"/>
+  <rect x="362" y="40" width="200" height="116" rx="16" fill="#2563EB" fill-opacity="0.03" stroke="#2563EB" stroke-opacity="0.12"/>
 </g>
 <line x1="0" y1="125" x2="900" y2="125" stroke="white" stroke-opacity="0.012" stroke-width="1"/>
 <line x1="0" y1="250" x2="900" y2="250" stroke="white" stroke-opacity="0.012" stroke-width="1"/>
@@ -403,6 +429,55 @@
   <ellipse cx="235" cy="262" rx="3.2" ry="2.1" fill="#F4A52A" opacity="0.32"/>
   <ellipse cx="273" cy="262" rx="3.2" ry="2.1" fill="#F4A52A" opacity="0.32"/>
 </g>
+<!-- ===== FOREGROUND LAPTOP (VS Code · AI model training) ===== -->
+<rect x="184" y="284" width="160" height="78" rx="3" fill="url(#monGlow)" opacity="0.7"/>
+<rect x="186" y="286" width="156" height="74" rx="6" fill="url(#lapG)" stroke="#1A3A5A" stroke-width="1.4"/>
+<rect x="190" y="290" width="148" height="66" rx="4" fill="#04101C"/>
+<!-- title bar -->
+<rect x="190" y="290" width="148" height="10" rx="4" fill="#0A1A2A"/>
+<circle cx="197" cy="295" r="2" fill="#9F1239"/><circle cx="204" cy="295" r="2" fill="#F59E0B"/><circle cx="211" cy="295" r="2" fill="#10B981"/>
+<text x="268" y="298" text-anchor="middle" font-family="'Courier New',monospace" font-size="5.5" fill="#2E6A86">train.py &#xB7; AI model</text>
+<!-- code -->
+<text x="196" y="312" font-family="'Courier New',monospace" font-size="6" fill="#7C3AED">model<tspan fill="#6B8BAA"> = Transformer()</tspan></text>
+<text x="196" y="321" font-family="'Courier New',monospace" font-size="6" fill="#2563EB">for<tspan fill="#6B8BAA"> epoch in range(100):</tspan></text>
+<text x="196" y="330" font-family="'Courier New',monospace" font-size="6" fill="#6B8BAA">  loss = <tspan fill="#10B981">train(model)</tspan></text>
+<text x="196" y="339" font-family="'Courier New',monospace" font-size="6" fill="#6B8BAA">  <tspan fill="#F59E0B">log</tspan>(epoch, loss)<tspan fill="#3AAFCC" class="cur"> &#x2588;</tspan></text>
+<!-- training loss curve -->
+<polyline points="292,348 300,344 307,340 314,339 320,337 327,336 333,335" fill="none" stroke="#3AAFCC" stroke-width="1.2" stroke-dasharray="70" stroke-dashoffset="70"><animate attributeName="stroke-dashoffset" values="70;0" dur="3s" repeatCount="indefinite"/></polyline>
+<circle r="1.6" fill="#3AAFCC"><animateMotion dur="3s" repeatCount="indefinite" path="M292 348 L300 344 L307 340 L314 339 L320 337 L327 336 L333 335"/></circle>
+<!-- status bar -->
+<rect x="190" y="347" width="148" height="9" fill="#0A1824"/>
+<rect x="190" y="347" width="40" height="9" fill="#10B981" fill-opacity="0.16"><animate attributeName="width" values="34;120;34" dur="6s" repeatCount="indefinite"/></rect>
+<text x="194" y="354" font-family="'Courier New',monospace" font-size="5.5" fill="#10B981">&#x25B8; training  epoch 47/100  loss 0.18</text>
+<!-- deck / keyboard -->
+<path d="M176 360 L352 360 L368 374 L160 374 Z" fill="url(#lapG)" stroke="#1A3A5A" stroke-width="1.2"/>
+<rect x="178" y="362" width="172" height="1.6" fill="#0A1620" opacity="0.6"/>
+<rect x="248" y="368" width="34" height="4" rx="1.5" fill="#0A1620"/>
+<!-- key taps (stop while thinking) -->
+<g fill="#3AAFCC" class="typeGate">
+  <rect x="230" y="361" width="11" height="6" rx="1.5" class="kf" style="animation-delay:0s"/>
+  <rect x="247" y="361" width="11" height="6" rx="1.5" class="kf" style="animation-delay:.2s"/>
+  <rect x="264" y="361" width="11" height="6" rx="1.5" class="kf" style="animation-delay:.36s"/>
+  <rect x="281" y="361" width="11" height="6" rx="1.5" class="kf" style="animation-delay:.52s"/>
+</g>
+<!-- visible flipper hands typing -->
+<ellipse cx="212" cy="366" rx="10" ry="6" fill="#162943" stroke="#0B1828" stroke-width="1" class="lh"/>
+<ellipse cx="314" cy="366" rx="10" ry="6" fill="#162943" stroke="#0B1828" stroke-width="1" class="rh"/>
+<!-- AI provider glass badges -->
+<g font-family="'Courier New',monospace" font-size="6" font-weight="700">
+  <rect x="173" y="379" width="42" height="13" rx="6.5" fill="#FFFFFF" fill-opacity="0.05" stroke="#3AAFCC" stroke-opacity="0.5"/>
+  <circle cx="181" cy="385.5" r="2.3" fill="#3AAFCC"><animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/></circle>
+  <text x="187" y="388" fill="#9FC0D4">Claude</text>
+  <rect x="219" y="379" width="42" height="13" rx="6.5" fill="#FFFFFF" fill-opacity="0.05" stroke="#10B981" stroke-opacity="0.5"/>
+  <circle cx="227" cy="385.5" r="2.3" fill="#10B981"><animate attributeName="opacity" values="1;0.4;1" dur="2.7s" repeatCount="indefinite"/></circle>
+  <text x="233" y="388" fill="#9FC0D4">GPT-4o</text>
+  <rect x="265" y="379" width="42" height="13" rx="6.5" fill="#FFFFFF" fill-opacity="0.05" stroke="#2563EB" stroke-opacity="0.5"/>
+  <circle cx="273" cy="385.5" r="2.3" fill="#2563EB"><animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/></circle>
+  <text x="279" y="388" fill="#9FC0D4">Gemini</text>
+  <rect x="311" y="379" width="42" height="13" rx="6.5" fill="#FFFFFF" fill-opacity="0.05" stroke="#C7D6E6" stroke-opacity="0.5"/>
+  <circle cx="319" cy="385.5" r="2.3" fill="#C7D6E6"><animate attributeName="opacity" values="1;0.4;1" dur="2.9s" repeatCount="indefinite"/></circle>
+  <text x="325" y="388" fill="#9FC0D4">Cursor</text>
+</g>
 <!-- THOUGHT BUBBLE with float + glow -->
 <g class="th" filter="url(#thoughtGlow)">
   <circle cx="274" cy="244" r="3.5" fill="#0D2030" stroke="#3AAFCC" stroke-width="0.9" stroke-opacity="0.6"/>
@@ -423,24 +498,23 @@
 <!-- speech text with flash -->
 <text x="386" y="269" text-anchor="middle" font-family="'Courier New',monospace" font-size="8.5" fill="#3AAFCC" font-weight="700" class="lts">Let's build something</text>
 <text x="386" y="284" text-anchor="middle" font-family="'Courier New',monospace" font-size="8.5" fill="#F59E0B" font-weight="700" class="lts">extraordinary. &#x1F680;</text>
-<!-- KEYBOARD -->
-<rect x="170" y="352" width="168" height="10" rx="3" fill="#0A1620" stroke="#1A3245" stroke-width="0.8"/>
-<rect x="174" y="354" width="160" height="6" rx="2" fill="#060E18"/>
-<line x1="196" y1="354" x2="196" y2="360" stroke="#1A3245" stroke-width="0.5"/>
-<line x1="216" y1="354" x2="216" y2="360" stroke="#1A3245" stroke-width="0.5"/>
-<line x1="236" y1="354" x2="236" y2="360" stroke="#1A3245" stroke-width="0.5"/>
-<line x1="256" y1="354" x2="256" y2="360" stroke="#1A3245" stroke-width="0.5"/>
-<line x1="276" y1="354" x2="276" y2="360" stroke="#1A3245" stroke-width="0.5"/>
-<line x1="296" y1="354" x2="296" y2="360" stroke="#1A3245" stroke-width="0.5"/>
-<line x1="316" y1="354" x2="316" y2="360" stroke="#1A3245" stroke-width="0.5"/>
-<!-- realistic key taps under the typing hands -->
-<g fill="#3AAFCC">
-  <rect x="180" y="353" width="14" height="8" rx="1.5" class="kf" style="animation-delay:0s"/>
-  <rect x="205" y="353" width="14" height="8" rx="1.5" class="kf" style="animation-delay:.12s"/>
-  <rect x="232" y="353" width="14" height="8" rx="1.5" class="kf" style="animation-delay:.34s"/>
-  <rect x="258" y="353" width="14" height="8" rx="1.5" class="kf" style="animation-delay:.22s"/>
-  <rect x="284" y="353" width="14" height="8" rx="1.5" class="kf" style="animation-delay:.46s"/>
-  <rect x="305" y="353" width="14" height="8" rx="1.5" class="kf" style="animation-delay:.6s"/>
+<!-- IDEA: lightbulb + question marks (appear while the penguin thinks) -->
+<g class="idea">
+  <circle cx="254" cy="166" r="15" fill="#FFE14D" opacity="0.16"/>
+  <g stroke="#FFD43B" stroke-width="2" stroke-linecap="round" opacity="0.85">
+    <line x1="254" y1="147" x2="254" y2="139"/>
+    <line x1="236" y1="153" x2="230" y2="147"/>
+    <line x1="272" y1="153" x2="278" y2="147"/>
+    <line x1="231" y1="167" x2="223" y2="167"/>
+    <line x1="277" y1="167" x2="285" y2="167"/>
+  </g>
+  <circle cx="254" cy="166" r="9" fill="#FFE14D" stroke="#E0B020" stroke-width="1"/>
+  <path d="M250 169 L258 169 L256 175 L252 175 Z" fill="#FFF6C8"/>
+  <rect x="251" y="175" width="6" height="4" rx="1" fill="#9AA0A8"/>
+  <line x1="251.5" y1="177.5" x2="256.5" y2="177.5" stroke="#5A6068" stroke-width="0.6"/>
+  <text x="300" y="151" font-family="Georgia,serif" font-size="17" fill="#3AAFCC" font-weight="700">?</text>
+  <text x="320" y="170" font-family="Georgia,serif" font-size="12" fill="#7C3AED" font-weight="700">?</text>
+  <text x="287" y="173" font-family="Georgia,serif" font-size="10" fill="#10B981" font-weight="700">?</text>
 </g>
 <!-- cinematic vignette frame -->
 <rect width="900" height="500" fill="url(#vig2)" pointer-events="none"/>
@@ -448,4 +522,5 @@
 <text x="450" y="422" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#3A8AA8" font-style="italic">Build with precision. Think with depth. Outlast everything.</text>
 <text x="450" y="444" text-anchor="middle" font-family="'Courier New',monospace" font-size="7" fill="#0E2233" letter-spacing="2">CC BY-NC 4.0  &#xB7;  &#xA9; 2026 AZHAR SHAKEEL  &#xB7;  ALL RIGHTS RESERVED</text>
 </svg>
+
 
