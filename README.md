@@ -10,15 +10,17 @@
 
 <img src="assets/build.svg" width="100%">
 
-**`[ SYSTEM ARCHITECT · ALGORITHM ARCHITECTURE · FULL-STACK SYSTEMS ]`**
+**`[ SYSTEM ARCHITECT · ALGORITHM DESIGN · FULL-STACK SYSTEMS ]`**
 
-*The foundation holds. The intelligence compounds. The work speaks.*
+*The foundation holds. The intelligence compounds. The work speaks for itself.*
 
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=azharshakeel&label=Profile%20Views&color=8b5cf6&style=flat-square" alt="Profile views"/>
+&nbsp;
+[![Follow](https://img.shields.io/github/followers/azharshakeel?label=Follow&style=social)](https://github.com/azharshakeel)
+&nbsp;
 [![License](https://img.shields.io/badge/License-All_Rights_Reserved-critical?style=flat-square)](LICENSE)
-
-*Protected as proprietary content under an All Rights Reserved license.*
-
-*Brand/design assets are additionally protected under strict manual terms — see [NOTICE](NOTICE.md), [ASSET_LICENSE](ASSET_LICENSE.md), and [PRIVACY](PRIVACY.md).*
 
 </div>
 
@@ -26,19 +28,18 @@
 
 ```
 ┄┄┄  CORE DIRECTIVE  ┄┄┄
-
   I don't wrap APIs and call it AI.
   I don't chase frameworks that
   won't exist next year.
+
   I build systems engineered
   to outlast the hype.
 
   Every line has a reason.
   Every architecture, a philosophy.
   What ships is production —
-  not a proof of concept
-  with ambition.
-
+  never a proof of concept
+  wearing ambition.
 ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
 ```
 
@@ -49,7 +50,7 @@
 <table>
 <tr>
 <td width="60">🐍</td>
-<td><strong>Python. Primary. Always.</strong><br/>Not a preference — a precision instrument. Every AI pipeline, orchestration layer, algorithmic engine, and production backend is written in Python. The stack may vary at the edges. The core never does.</td>
+<td><strong>Python. Primary. Always.</strong><br/>Not a preference — a precision instrument. Every pipeline, orchestration layer, algorithmic engine, and production backend runs on it. The edges may shift. The core never moves.</td>
 </tr>
 </table>
 
@@ -57,7 +58,7 @@
 
 ## `02` &nbsp; The Decision Engine
 
-When a problem arrives, the first question isn't *how* — it's *what kind*.
+Every problem starts with one question — not *how*, but *what kind*.
 
 ```
 ╔══════════════════════╗
@@ -103,13 +104,13 @@ When a problem arrives, the first question isn't *how* — it's *what kind*.
 ## `04` &nbsp; Engineering Philosophy
 
 &nbsp;&nbsp;&nbsp;**`[01]` UNIX-NATIVE BY DESIGN**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not deployed on Linux. *Architected* in Linux. Modular at every layer, minimal footprint, no debt baked in at the foundation.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not deployed on Linux — *architected* in it. Modular at every layer, minimal footprint, zero debt at the foundation.
 
 &nbsp;&nbsp;&nbsp;**`[02]` PRODUCTION MEANS PRODUCTION**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What ships is auditable, load-tested, and repeatable. Stability is engineered in — not patched after the fact.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Auditable, load-tested, repeatable. Stability is engineered in — not patched after the fact.
 
 &nbsp;&nbsp;&nbsp;**`[03]` KNOWLEDGE IS INFRASTRUCTURE**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every system built compounds into a private body of work. The gaps close. The edge sharpens. No destination — only depth.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every system compounds into a private body of work. The gaps close, the edge sharpens. No destination — only depth.
 
 ---
 
@@ -123,12 +124,13 @@ When a problem arrives, the first question isn't *how* — it's *what kind*.
 │                          │
 │  Algorithm design →      │
 │  production infra.       │
+│                          │
 │  Real stakes.            │
 │  Real data.              │
 │  Real delivery.          │
 │                          │
 │  The R&D behind it       │
-│  remains private.        │
+│  stays private.          │
 │                          │
 └──────────────────────────┘
 ```
@@ -137,10 +139,7 @@ When a problem arrives, the first question isn't *how* — it's *what kind*.
 
 ## `06` &nbsp; Occasionally
 
-When a concept earns public attention, I write about it or teach it.
-**Building, researching, and shipping always comes first.**
-
-This work is proprietary and protected under an All Rights Reserved license.
+When a concept earns public attention, I write about it or teach it. **Building, researching, and shipping always come first.**
 
 ---
 
@@ -148,7 +147,7 @@ This work is proprietary and protected under an All Rights Reserved license.
 
 ```
 ╔═══════════════════════════╗
-║  ◈  STATUS: ACTIVE  ◈     ║
+║   ◈  STATUS: ACTIVE  ◈    ║
 ╠═══════════════════════════╣
 ║  Research Mode — Active   ║
 ║  Proprietary systems &    ║
@@ -158,14 +157,18 @@ This work is proprietary and protected under an All Rights Reserved license.
 
 <br/>
 
-[![Python](https://img.shields.io/badge/Python-Primary_Language-ffd43b?style=flat-square&logo=python&logoColor=black)](https://python.org)&nbsp;
-[![Linux](https://img.shields.io/badge/Linux-Native_Foundation-00ff88?style=flat-square&logo=linux&logoColor=black)](https://kernel.org)&nbsp;
-[![AI/ML](https://img.shields.io/badge/AI--ML-Precision_Systems-00d4ff?style=flat-square&logo=pytorch&logoColor=white)](#)&nbsp;
+[![Python](https://img.shields.io/badge/Python-Primary_Language-ffd43b?style=flat-square&logo=python&logoColor=black)](https://python.org)
+&nbsp;
+[![Linux](https://img.shields.io/badge/Linux-Native_Foundation-00ff88?style=flat-square&logo=linux&logoColor=black)](https://kernel.org)
+&nbsp;
+[![AI/ML](https://img.shields.io/badge/AI--ML-Precision_Systems-00d4ff?style=flat-square&logo=pytorch&logoColor=white)](#)
+&nbsp;
 [![Status](https://img.shields.io/badge/Status-Research_Mode-ff6b6b?style=flat-square)](#)
 
 <br/>
 
-*Protected under All Rights Reserved terms — see [LICENSE](LICENSE), [NOTICE](NOTICE.md), [ASSET_LICENSE](ASSET_LICENSE.md), and [PRIVACY](PRIVACY.md).*
+*Proprietary content — All Rights Reserved. Code, brand, and design assets are protected under strict manual terms:*
+*[LICENSE](LICENSE) · [NOTICE](NOTICE.md) · [ASSET_LICENSE](ASSET_LICENSE.md) · [PRIVACY](PRIVACY.md)*
 
 <br/>
 
