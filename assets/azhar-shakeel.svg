@@ -47,6 +47,23 @@
     76%         { opacity:0.30; transform: translateY(15px) }
     82%         { opacity:0; transform: translateY(22px) }
   }
+  /* ── POWER-UP FX ── */
+  @keyframes shockwave { 0%{transform:scale(0.35);opacity:0.75} 70%{opacity:0.18} 100%{transform:scale(1.6);opacity:0} }
+  @keyframes orbit  { to { transform: rotate(360deg) } }
+  @keyframes aurora { 0%,100%{transform:translateX(0px) scaleY(1)} 50%{transform:translateX(-70px) scaleY(1.25)} }
+  @keyframes bolt   { 0%,86%,100%{opacity:0} 88%{opacity:0.9} 90%{opacity:0.15} 92%{opacity:0.75} 94%{opacity:0} }
+  @keyframes comet  { 0%{transform:translate(-160px,60px);opacity:0} 8%{opacity:0.9} 45%{opacity:0.9} 60%{transform:translate(820px,-190px);opacity:0} 100%{transform:translate(820px,-190px);opacity:0} }
+  @keyframes glitchR { 0%,92%,100%{transform:translate(0,0);opacity:0} 93%{transform:translate(3px,-2px);opacity:0.75} 95%{transform:translate(-2px,1px);opacity:0.55} 97%{transform:translate(0,0);opacity:0} }
+  @keyframes glitchC { 0%,92%,100%{transform:translate(0,0);opacity:0} 93%{transform:translate(-3px,2px);opacity:0.75} 95%{transform:translate(2px,-1px);opacity:0.55} 97%{transform:translate(0,0);opacity:0} }
+  @keyframes rain   { 0%{transform:translateY(-90px);opacity:0} 10%{opacity:0.5} 85%{opacity:0.28} 100%{transform:translateY(560px);opacity:0} }
+  @keyframes corePulse { 0%,100%{transform:scale(1);opacity:0.5} 50%{transform:scale(1.18);opacity:0.85} }
+  /* ── OVERDRIVE FX ── */
+  @keyframes eq     { 0%,100%{transform:scaleY(0.25)} 50%{transform:scaleY(1)} }
+  @keyframes spark  { 0%{opacity:0;transform:translateY(0) scale(1)} 15%{opacity:0.9} 100%{opacity:0;transform:translateY(-130px) scale(0.3)} }
+  @keyframes warpL  { 0%{transform:translateX(0);opacity:0} 12%{opacity:0.7} 100%{transform:translateX(-260px);opacity:0} }
+  @keyframes warpR  { 0%{transform:translateX(0);opacity:0} 12%{opacity:0.7} 100%{transform:translateX(260px);opacity:0} }
+  @keyframes note   { 0%{opacity:0;transform:translate(0,0) rotate(0deg)} 20%{opacity:0.85} 100%{opacity:0;transform:translate(26px,-52px) rotate(18deg)} }
+  @keyframes blipPing { 0%{transform:scale(0.3);opacity:0.9} 100%{transform:scale(2.6);opacity:0} }
   @keyframes neonFlicker {
     0%,17%,19%,21%,51%,53%,55%,100% { opacity:1; }
     18%,20% { opacity:0.07; }
@@ -122,6 +139,17 @@
   <stop offset="0%"   stop-color="#374151"/>
   <stop offset="100%" stop-color="#0F1825"/>
 </linearGradient>
+<!-- ── Aurora energy sheet ── -->
+<linearGradient id="auroraG" x1="0%" y1="0%" x2="0%" y2="100%">
+  <stop offset="0%"   stop-color="#06B6D4" stop-opacity="0"/>
+  <stop offset="45%"  stop-color="#7C3AED" stop-opacity="0.16"/>
+  <stop offset="100%" stop-color="#4F8EFF" stop-opacity="0"/>
+</linearGradient>
+<!-- ── Comet tail ── -->
+<linearGradient id="cometG" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%"   stop-color="#06B6D4" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+</linearGradient>
 <!-- ── Vignette ── -->
 <radialGradient id="vig" cx="50%" cy="50%" r="74%">
   <stop offset="42%"  stop-color="transparent"/>
@@ -165,6 +193,21 @@
 <!-- edge accent bars -->
 <rect x="0" y="0"   width="1400" height="2.5" fill="url(#rgb)"/>
 <rect x="0" y="557" width="1400" height="2.5" fill="url(#rgb)" opacity="0.38"/>
+<!-- aurora energy waves -->
+<g opacity="0.85">
+  <path d="M-100,190 C200,120 500,240 800,165 C1050,105 1300,200 1500,150 L1500,320 C1250,260 1000,330 750,285 C480,240 200,310 -100,270 Z"
+    fill="url(#auroraG)" style="animation: aurora 14s ease-in-out infinite"/>
+  <path d="M-100,140 C250,200 550,90 850,175 C1100,240 1350,120 1500,190 L1500,300 C1200,240 950,300 650,250 C400,210 150,270 -100,230 Z"
+    fill="url(#auroraG)" opacity="0.6" style="animation: aurora 19s ease-in-out 2s infinite"/>
+</g>
+<!-- matrix rain columns -->
+<g font-family="'Courier New',monospace" font-size="11" fill="#06B6D4" opacity="0.5">
+  <text x="140"  y="0" style="animation: rain 7.5s linear 0s infinite">1<tspan x="140" dy="14">0</tspan><tspan x="140" dy="14">1</tspan><tspan x="140" dy="14">1</tspan><tspan x="140" dy="14">0</tspan></text>
+  <text x="215"  y="0" style="animation: rain 9.5s linear 2.4s infinite">0<tspan x="215" dy="14">1</tspan><tspan x="215" dy="14">0</tspan><tspan x="215" dy="14">0</tspan></text>
+  <text x="1180" y="0" style="animation: rain 8.2s linear 1.1s infinite">1<tspan x="1180" dy="14">1</tspan><tspan x="1180" dy="14">0</tspan><tspan x="1180" dy="14">1</tspan><tspan x="1180" dy="14">0</tspan></text>
+  <text x="1265" y="0" style="animation: rain 10.4s linear 3.8s infinite">0<tspan x="1265" dy="14">0</tspan><tspan x="1265" dy="14">1</tspan><tspan x="1265" dy="14">1</tspan></text>
+  <text x="1330" y="0" style="animation: rain 8.8s linear 5.2s infinite">1<tspan x="1330" dy="14">0</tspan><tspan x="1330" dy="14">1</tspan></text>
+</g>
 <!-- vol light blobs -->
 <g opacity="0.07" filter="url(#sb)">
   <polygon points="620,0 700,400 540,400" fill="url(#rgb)"/>
@@ -248,6 +291,76 @@
     <ellipse cx="655" cy="360" rx="156" ry="20"/>
   </g>
 </g>
+<!-- HUD TARGETING RING: rotating arc segments + tick dial around the orb -->
+<g>
+  <g style="transform-box:view-box; transform-origin:655px 296px; animation: orbit 26s linear infinite">
+    <circle cx="655" cy="296" r="226" fill="none" stroke="#4F8EFF" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="1.5 9"/>
+    <path d="M655,70 A226,226 0 0 1 851,183" fill="none" stroke="url(#rgb)" stroke-width="2.6" stroke-opacity="0.45" stroke-linecap="round"/>
+    <path d="M655,522 A226,226 0 0 1 459,409" fill="none" stroke="url(#rgb)" stroke-width="2.6" stroke-opacity="0.45" stroke-linecap="round"/>
+  </g>
+  <g style="transform-box:view-box; transform-origin:655px 296px; animation: spinR 34s linear infinite">
+    <circle cx="655" cy="296" r="238" fill="none" stroke="#7C3AED" stroke-opacity="0.13" stroke-width="5" stroke-dasharray="26 160"/>
+  </g>
+  <!-- crosshair tips -->
+  <g stroke="#06B6D4" stroke-width="1.6" stroke-opacity="0.4" stroke-linecap="round">
+    <line x1="655" y1="82"  x2="655" y2="70"/>
+    <line x1="655" y1="510" x2="655" y2="522"/>
+    <line x1="441" y1="296" x2="429" y2="296"/>
+    <line x1="869" y1="296" x2="881" y2="296"/>
+  </g>
+</g>
+<!-- rising energy sparks from the power core -->
+<g fill="#8FD6FF" filter="url(#g4)">
+  <circle cx="576" cy="452" r="2.6" style="animation: spark 4.2s ease-out 0s infinite"   opacity="0"/>
+  <circle cx="735" cy="446" r="2.2" style="animation: spark 5.0s ease-out 1.2s infinite" opacity="0"/>
+  <circle cx="612" cy="470" r="1.8" style="animation: spark 4.6s ease-out 2.3s infinite" opacity="0"/>
+  <circle cx="700" cy="466" r="2.4" style="animation: spark 5.4s ease-out 3.1s infinite" opacity="0"/>
+  <circle cx="655" cy="478" r="1.6" style="animation: spark 4.0s ease-out 1.8s infinite" opacity="0"/>
+</g>
+<!-- warp streaks at the flanks -->
+<g stroke-linecap="round">
+  <line x1="290" y1="446" x2="360" y2="446" stroke="#4F8EFF" stroke-width="2"   style="animation: warpL 2.6s ease-in 0s infinite"   opacity="0"/>
+  <line x1="310" y1="533" x2="365" y2="533" stroke="#7C3AED" stroke-width="1.6" style="animation: warpL 3.1s ease-in 1.1s infinite" opacity="0"/>
+  <line x1="1070" y1="474" x2="1140" y2="474" stroke="#06B6D4" stroke-width="2"   style="animation: warpR 2.8s ease-in 0.5s infinite" opacity="0"/>
+  <line x1="1055" y1="504" x2="1110" y2="504" stroke="#4F8EFF" stroke-width="1.6" style="animation: warpR 3.4s ease-in 1.7s infinite" opacity="0"/>
+</g>
+<!-- POWER CORE: expanding shockwave rings behind penguin -->
+<g style="transform-box:view-box; transform-origin:655px 296px">
+  <circle cx="655" cy="296" r="150" fill="none" stroke="url(#rgb)" stroke-width="2"
+    style="transform-box:view-box; transform-origin:655px 296px; animation: shockwave 4s ease-out 0s infinite" opacity="0"/>
+  <circle cx="655" cy="296" r="150" fill="none" stroke="#06B6D4" stroke-width="1.4"
+    style="transform-box:view-box; transform-origin:655px 296px; animation: shockwave 4s ease-out 1.3s infinite" opacity="0"/>
+  <circle cx="655" cy="296" r="150" fill="none" stroke="#7C3AED" stroke-width="1.7"
+    style="transform-box:view-box; transform-origin:655px 296px; animation: shockwave 4s ease-out 2.6s infinite" opacity="0"/>
+</g>
+<!-- power core bloom -->
+<circle cx="655" cy="300" r="120" fill="url(#aura)" filter="url(#g8)"
+  style="transform-box:view-box; transform-origin:655px 300px; animation: corePulse 3.5s ease-in-out infinite"/>
+<!-- orbiting plasma comets around the orb -->
+<g style="transform-box:view-box; transform-origin:655px 296px; animation: orbit 9s linear infinite">
+  <circle cx="655" cy="108" r="4.5" fill="#06B6D4" filter="url(#g4)"/>
+  <circle cx="655" cy="108" r="2"   fill="white"/>
+  <path d="M655,108 Q610,113 578,138" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</g>
+<g style="transform-box:view-box; transform-origin:655px 296px; animation: orbit 14s linear reverse infinite">
+  <circle cx="857" cy="296" r="3.8" fill="#A855F7" filter="url(#g4)"/>
+  <circle cx="857" cy="296" r="1.7" fill="white"/>
+  <path d="M857,296 Q852,340 830,370" fill="none" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" opacity="0.4"/>
+</g>
+<g style="transform-box:view-box; transform-origin:655px 296px; animation: orbit 6.5s linear infinite">
+  <circle cx="512" cy="296" r="3" fill="#4F8EFF" filter="url(#g4)"/>
+</g>
+<!-- electric arcs crackling off the orb -->
+<g stroke="#8FD6FF" stroke-width="1.6" fill="none" stroke-linecap="round" filter="url(#g4)">
+  <path d="M497,240 L512,246 L503,258 L521,262 L512,276" style="animation: bolt 3.7s linear 0s infinite" opacity="0"/>
+  <path d="M812,224 L798,232 L809,242 L793,250 L801,263" style="animation: bolt 4.3s linear 1.6s infinite" opacity="0"/>
+  <path d="M700,132 L692,146 L706,150 L697,164"           style="animation: bolt 5.1s linear 2.8s infinite" opacity="0"/>
+</g>
+<!-- shooting comet across the sky -->
+<g style="animation: comet 11s ease-in 3s infinite" opacity="0">
+  <rect x="120" y="168" width="130" height="2.4" rx="1.2" fill="url(#cometG)"/>
+  <circle cx="252" cy="169" r="3.6" fill="white" filter="url(#g4)"/>
+</g>
 <!-- neural constellation with data flowing along edges -->
 <g>
   <g fill="none" stroke="url(#rgb)" stroke-width="1" stroke-opacity="0.20" stroke-dasharray="2 7">
@@ -319,6 +432,22 @@
   style="animation: scan 2.1s linear 0.2s 1 forwards"/>
 <!-- ░░ TITLE BLOCK ░░ -->
 <g style="animation: fadeUp 0.8s ease 0.25s both">
+  <!-- chromatic glitch ghosts -->
+  <text x="700" y="66"
+    font-family="'Courier New',Consolas,monospace"
+    font-size="62" font-weight="800" letter-spacing="22"
+    fill="#FF3B6B" text-anchor="middle" opacity="0"
+    style="animation: glitchR 4.5s steps(1) 2s infinite">ASD</text>
+  <text x="700" y="66"
+    font-family="'Courier New',Consolas,monospace"
+    font-size="62" font-weight="800" letter-spacing="22"
+    fill="#06B6D4" text-anchor="middle" opacity="0"
+    style="animation: glitchC 4.5s steps(1) 2s infinite">ASD</text>
+  <!-- energy charge bar under title -->
+  <rect x="560" y="76" width="280" height="2.4" rx="1.2" fill="url(#rgb)" opacity="0.65" filter="url(#g4)">
+    <animate attributeName="width" values="0;280;280;0" keyTimes="0;0.35;0.8;1" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="700;560;560;700" keyTimes="0;0.35;0.8;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
   <text x="700" y="66" filter="url(#titleGlow)"
     font-family="'Courier New',Consolas,monospace"
     font-size="62" font-weight="800" letter-spacing="22"
@@ -450,6 +579,18 @@
       <circle cx="729" cy="228" r="2.5" fill="#7C3AED" opacity="0.9" filter="url(#g4)">
         <animate attributeName="opacity" values="0.9;0.3;0.9" dur="1.5s" repeatCount="indefinite"/>
       </circle>
+      <!-- live audio equalizer beaming off the right ear cup -->
+      <g fill="url(#rgb)" opacity="0.9">
+        <rect x="748" y="204" width="4" height="22" rx="2" style="transform-box:fill-box; transform-origin:50% 100%; animation: eq 0.7s ease-in-out 0s infinite"/>
+        <rect x="756" y="198" width="4" height="28" rx="2" style="transform-box:fill-box; transform-origin:50% 100%; animation: eq 0.9s ease-in-out 0.15s infinite"/>
+        <rect x="764" y="208" width="4" height="18" rx="2" style="transform-box:fill-box; transform-origin:50% 100%; animation: eq 0.6s ease-in-out 0.3s infinite"/>
+        <rect x="772" y="202" width="4" height="24" rx="2" style="transform-box:fill-box; transform-origin:50% 100%; animation: eq 0.8s ease-in-out 0.1s infinite"/>
+      </g>
+      <!-- floating music notes -->
+      <g font-family="system-ui" fill="#8FD6FF" filter="url(#g4)">
+        <text x="752" y="188" font-size="15" style="animation: note 3.4s ease-out 0s infinite"   opacity="0">♪</text>
+        <text x="770" y="178" font-size="12" style="animation: note 4.1s ease-out 1.6s infinite" opacity="0">♫</text>
+      </g>
     </g><!-- /head -->
   </g><!-- /pgShadow -->
   <!-- ── DRINKING ARM: left wing + coffee cup raise to the beak and sip ── -->
@@ -528,6 +669,36 @@
 <g transform="translate(270,98)" style="animation: flicker 7s ease-in-out 2.5s infinite">
   <circle cx="0" cy="0" r="16" fill="#7C3AED" opacity="0.07"/>
   <circle cx="0" cy="0" r="5"  fill="white"  opacity="0.15"/>
+</g>
+<!-- ░░ SYSTEM POWER GAUGE (bottom-left HUD) ░░ -->
+<g style="animation: fadeUp 0.7s ease 1.1s both">
+  <text x="52" y="483" font-family="'Courier New',monospace" font-size="10.5" fill="#4F8EFF" letter-spacing="2.5" font-weight="700">SYS.PWR</text>
+  <rect x="128" y="473" width="184" height="10" rx="5" fill="#0A1626" stroke="#1A2D45" stroke-width="1"/>
+  <rect x="131" y="476" width="178" height="4" rx="2" fill="url(#rgb)" filter="url(#g4)">
+    <animate attributeName="width" values="60;178;142;178" keyTimes="0;0.45;0.7;1" dur="5.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="322" y="483" font-family="'Courier New',monospace" font-size="10.5" fill="#10B981" font-weight="700">MAX
+    <animate attributeName="opacity" values="1;0.35;1" dur="1.4s" repeatCount="indefinite"/>
+  </text>
+  <text x="52" y="505" font-family="'Courier New',monospace" font-size="9.5" fill="#213450" letter-spacing="1.5">UPTIME ∞  ·  CORES 128  ·  TEMP 0K  ·  LIMITS NULL</text>
+</g>
+<!-- ░░ RADAR SCANNER (bottom-right HUD) ░░ -->
+<g style="animation: fadeUp 0.7s ease 1.2s both">
+  <circle cx="1290" cy="497" r="36" fill="#060E1C" stroke="#1A2D45" stroke-width="1.2"/>
+  <circle cx="1290" cy="497" r="24" fill="none" stroke="#12233A" stroke-width="1"/>
+  <circle cx="1290" cy="497" r="12" fill="none" stroke="#12233A" stroke-width="1"/>
+  <line x1="1254" y1="497" x2="1326" y2="497" stroke="#12233A" stroke-width="1"/>
+  <line x1="1290" y1="461" x2="1290" y2="533" stroke="#12233A" stroke-width="1"/>
+  <!-- sweep beam -->
+  <g style="transform-box:view-box; transform-origin:1290px 497px; animation: orbit 3.2s linear infinite">
+    <path d="M1290,497 L1290,461 A36,36 0 0 1 1315,472 Z" fill="#06B6D4" opacity="0.30"/>
+    <line x1="1290" y1="497" x2="1290" y2="461" stroke="#06B6D4" stroke-width="1.6" stroke-opacity="0.85"/>
+  </g>
+  <!-- blips -->
+  <circle cx="1302" cy="483" r="2.2" fill="#10B981"><animate attributeName="opacity" values="0.9;0.15;0.9" dur="3.2s" repeatCount="indefinite"/></circle>
+  <circle cx="1302" cy="483" r="2.2" fill="none" stroke="#10B981" stroke-width="1" style="transform-box:view-box; transform-origin:1302px 483px; animation: blipPing 3.2s ease-out infinite"/>
+  <circle cx="1276" cy="510" r="2"   fill="#F59E0B"><animate attributeName="opacity" values="0.85;0.15;0.85" dur="3.2s" begin="1.4s" repeatCount="indefinite"/></circle>
+  <text x="1290" y="546" text-anchor="middle" font-family="'Courier New',monospace" font-size="8.5" fill="#2A4060" letter-spacing="2">SCANNING</text>
 </g>
 <!-- ░░ VIGNETTE ░░ -->
 <rect width="1400" height="560" fill="url(#vig)" pointer-events="none"/>
