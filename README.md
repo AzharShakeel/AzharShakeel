@@ -122,9 +122,9 @@ Every system compounds into a private body of work. The gaps close, the edge sha
 
 ## `05` &nbsp; Public Output & Writing
 
-When a concept earns public attention, I write about it on my blog. Building, researching, and shipping always come first.
+When a concept earns public attention, I write about it in my articles. Building, researching, and shipping always come first.
 
-[Read the Blog](https://azharshakeel.onrender.com) &nbsp;·&nbsp; [Explore Public Work](https://github.com/azharshakeel)
+[Read the Articles](https://azharshakeel.onrender.com) &nbsp;·&nbsp; [Explore Public Work](https://github.com/azharshakeel)
 
 ---
 
@@ -143,7 +143,7 @@ When a concept earns public attention, I write about it on my blog. Building, re
 
 `Python` `Linux` `AI/ML` `Status`
 
-[LinkedIn](#) &nbsp;·&nbsp; [Email](mailto:azharshakeel@duck.com)
+[LinkedIn](https://www.linkedin.com/in/azharshakeel/) &nbsp;·&nbsp; [Email](mailto:azharshakeel@duck.com)
 
 </div>
 
