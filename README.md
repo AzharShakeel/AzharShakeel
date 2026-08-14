@@ -16,6 +16,8 @@
 
 *The foundation holds. The intelligence compounds. The work speaks for itself.*
 
+`Python` · `Machine Learning` · `AI Systems` · `Full-Stack` · `Linux`
+
 <br/>
 
 <img src="https://komarev.com/ghpvc/?username=azharshakeel&label=Profile%20Views&color=8b5cf6&style=flat-square" alt="Profile views"/>
@@ -124,6 +126,8 @@ Every system compounds into a private body of work. The gaps close, the edge sha
 
 When a concept earns public attention, I write about it in my articles. Building, researching, and shipping always come first.
 
+Pinned below: **Build Not Watch** · **KynCipher** · **TranscribeFlow AI** · **Linux for Every Machine**
+
 [Read the Articles](https://azharshakeel.onrender.com) &nbsp;·&nbsp; [Explore Public Work](https://github.com/azharshakeel)
 
 ---
@@ -149,6 +153,6 @@ When a concept earns public attention, I write about it in my articles. Building
 
 ---
 
-<sub>All Rights Reserved. Code, brand, and design assets are protected under strict manual terms: LICENSE · NOTICE · ASSET_LICENSE · PRIVACY</sub>
+<sub>Open-source projects are shared freely under their individual repo licenses. Brand, design, and private-system architecture remain protected under strict manual terms: LICENSE · NOTICE · ASSET_LICENSE · PRIVACY</sub>
 
 <p align="center"><i>The surface is intentional. What's underneath is the point.</i></p>
